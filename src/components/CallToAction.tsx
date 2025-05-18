@@ -14,7 +14,7 @@ const CallToAction: React.FC = () => {
           <Button className="bg-white text-blue-700 hover:bg-blue-50 px-8 py-6 rounded-lg text-base">
             Get Started
           </Button>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 rounded-lg text-base">
+          <Button className="bg-blue-500 text-white hover:bg-blue-600 border border-white px-8 py-6 rounded-lg text-base">
             Read Documentation
           </Button>
         </div>

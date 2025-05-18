@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           <Button className="cta-button flex items-center gap-2 px-8 py-6 text-base">
             Explore Vetra <ArrowRight size={16} />
           </Button>
-          <Button variant="outline" className="px-8 py-6 text-base rounded-lg">
+          <Button className="bg-blue-500 text-white hover:bg-blue-600 border border-white px-8 py-6 text-base rounded-lg">
             View Documentation
           </Button>
         </div>
