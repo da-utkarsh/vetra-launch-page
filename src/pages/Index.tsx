@@ -30,6 +30,52 @@ const Index = () => {
     };
   }, []);
   
+  // Custom cursor logic
+  useEffect(() => {
+    // Add cursor elements to the DOM
+    const cursorDot = document.createElement('div');
+    cursorDot.className = 'cursor-dot';
+    document.body.appendChild(cursorDot);
+    
+    const cursorOutline = document.createElement('div');
+    cursorOutline.className = 'cursor-outline';
+    document.body.appendChild(cursorOutline);
+    
+    // Set cursor visibility after small delay
+    setTimeout(() => {
+      document.body.classList.add('cursor-visible');
+    }, 500);
+    
+    // Function to animate the cursor
+    const positionCursor = (e: MouseEvent) => {
+      const mouseY = e.clientY;
+      const mouseX = e.clientX;
+      
+      cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      cursorOutline.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    }
+    
+    window.addEventListener('mousemove', positionCursor);
+    
+    // Add hover effect for links and buttons
+    const hoverElements = document.querySelectorAll('.hover-link, a, button');
+    
+    hoverElements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
+        cursorOutline.classList.add('hover');
+      });
+      element.addEventListener('mouseleave', () => {
+        cursorOutline.classList.remove('hover');
+      });
+    });
+    
+    return () => {
+      window.removeEventListener('mousemove', positionCursor);
+      document.body.removeChild(cursorDot);
+      document.body.removeChild(cursorOutline);
+    };
+  }, []);
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

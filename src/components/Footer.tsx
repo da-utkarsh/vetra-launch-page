@@ -9,10 +9,10 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <Logo />
           <div className="flex items-center gap-8 mt-6 md:mt-0">
-            <a href="#" className="text-sm text-gray-400 hover:text-white">GitHub</a>
-            <a href="#" className="text-sm text-gray-400 hover:text-white">Twitter</a>
-            <a href="#" className="text-sm text-gray-400 hover:text-white">Discord</a>
-            <a href="#" className="text-sm text-gray-400 hover:text-white">Blog</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-white hover-link" data-cursor="hover">GitHub</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-white hover-link" data-cursor="hover">Twitter</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-white hover-link" data-cursor="hover">Discord</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-white hover-link" data-cursor="hover">Blog</a>
           </div>
         </div>
         
@@ -21,9 +21,9 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} Vetra. All rights reserved.
           </p>
           <div className="flex items-center gap-6 mt-4 md:mt-0">
-            <a href="#" className="text-xs text-gray-500 hover:text-gray-300">Terms</a>
-            <a href="#" className="text-xs text-gray-500 hover:text-gray-300">Privacy</a>
-            <a href="#" className="text-xs text-gray-500 hover:text-gray-300">Security</a>
+            <a href="#" className="text-xs text-gray-500 hover:text-gray-300 hover-link" data-cursor="hover">Terms</a>
+            <a href="#" className="text-xs text-gray-500 hover:text-gray-300 hover-link" data-cursor="hover">Privacy</a>
+            <a href="#" className="text-xs text-gray-500 hover:text-gray-300 hover-link" data-cursor="hover">Security</a>
           </div>
         </div>
       </div>
