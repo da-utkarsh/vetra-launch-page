@@ -4,26 +4,26 @@ import Logo from './Logo';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-12 px-6 lg:px-10 bg-gray-50">
+    <footer className="py-12 px-6 lg:px-10 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <Logo />
           <div className="flex items-center gap-8 mt-6 md:mt-0">
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-900">GitHub</a>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-900">Twitter</a>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-900">Discord</a>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-900">Blog</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-white">GitHub</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-white">Twitter</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-white">Discord</a>
+            <a href="#" className="text-sm text-gray-400 hover:text-white">Blog</a>
           </div>
         </div>
         
-        <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row items-center justify-between">
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-gray-500">
             &copy; {new Date().getFullYear()} Vetra. All rights reserved.
           </p>
           <div className="flex items-center gap-6 mt-4 md:mt-0">
-            <a href="#" className="text-xs text-gray-500 hover:text-gray-700">Terms</a>
-            <a href="#" className="text-xs text-gray-500 hover:text-gray-700">Privacy</a>
-            <a href="#" className="text-xs text-gray-500 hover:text-gray-700">Security</a>
+            <a href="#" className="text-xs text-gray-500 hover:text-gray-300">Terms</a>
+            <a href="#" className="text-xs text-gray-500 hover:text-gray-300">Privacy</a>
+            <a href="#" className="text-xs text-gray-500 hover:text-gray-300">Security</a>
           </div>
         </div>
       </div>
